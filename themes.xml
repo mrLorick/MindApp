@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.MindByRomanZanoni"  parent="Theme.MaterialComponents.Light.NoActionBar" >
+
+        <item name="colorPrimary">@color/app_color</item>
+        <item name="colorPrimaryVariant">@color/app_color</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/app_color</item>
+        <item name="colorSecondaryVariant">@color/app_color</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+    </style>
+
+    <style name="outfit_regular_text_style" parent="Widget.MaterialComponents.TextView">
+        <item name="android:fontFamily">@font/outfit_regular</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/heading_color_navi</item>
+    </style>
+
+    <style name="avenir_regular_text_style" parent="Widget.MaterialComponents.TextView">
+        <item name="android:fontFamily">@font/avenir_regular</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/textview_color</item>
+    </style>
+
+    <style name="avenir_medium_textview" parent="Widget.MaterialComponents.TextView">
+        <item name="android:fontFamily">@font/avenir_medium</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+
+    <style name="avenir_bold_text_style" parent="Widget.MaterialComponents.TextView">
+        <item name="android:fontFamily">@font/avenir_heavy</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/light_mode_black</item>
+    </style>
+
+
+    <style name="avenir_bold_black_text_style" parent="Widget.MaterialComponents.TextView">
+        <item name="android:fontFamily">@font/avenir_black</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/light_mode_black</item>
+    </style>
+
+    <style name="avenir_edit_text_style" parent="">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/_42sdp</item>
+        <item name="android:fontFamily">@font/avenir_regular</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/light_mode_black</item>
+        <item name="android:backgroundTint">@color/bg_color_grey_dark</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColorHint">@color/text_color_hint</item>
+        <item name="android:inputType">textCapSentences</item>
+    </style>
+
+    <style name="avenir_edit_text_style_with_lines" parent="">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/_42sdp</item>
+        <item name="android:fontFamily">@font/avenir_regular</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/light_mode_black</item>
+        <item name="android:backgroundTint">@color/bg_color_grey_dark</item>
+        <item name="android:textColorHint">@color/text_color_hint</item>
+<!--        <item name="android:inputType">textMultiLine</item>-->
+        <item name="android:imeOptions">actionDone</item>
+       <item name="android:inputType">textCapSentences</item>
+    </style>
+
+
+    <style name="EditTextInputLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/_40sdp</item>
+        <item name="android:textSize">@dimen/_11ssp</item>
+        <item name="android:textColorHint">@color/lightest_grey</item>
+        <item name="android:paddingStart">@dimen/_5sdp</item>
+        <item name="android:paddingEnd">@dimen/_10sdp</item>
+        <item name="hintTextColor">@color/lightest_grey</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:inputType">textCapSentences</item>
+        <item name="fontFamily">@font/avenir_regular</item>
+        <item name="android:fontFamily">@font/avenir_regular</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="backgroundColor">@android:color/transparent</item>
+        <item name="android:importantForAutofill" tools:targetApi="o">no</item>
+    </style>
+
+    <style name="InputTextInputLayoutStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/_42sdp</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="hintEnabled">false</item>
+        <item name="boxBackgroundMode">none</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <item name="passwordToggleEnabled">true</item>
+      <!--  <item name="passwordToggleDrawable">@drawable/custom_selector_eye</item>-->
+    </style>
+
+    <style name="MaterialCardEditTextStyle" parent="">
+        <item name="background">@color/white</item>
+        <item name="cardBackgroundColor">@color/white</item>
+        <item name="strokeColor">#EBECF3</item>
+        <item name="strokeWidth">1sp</item>
+        <item name="cardCornerRadius">@dimen/_7sdp</item>
+
+    </style>
+
+
+    <style name="TextInputLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/light_mode_black</item>
+        <item name="hintEnabled">false</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="fontFamily">@font/avenir_regular</item>
+        <item name="android:cursorVisible">true</item>
+        <item name="android:textCursorDrawable">@color/app_color</item>
+    </style>
+
+
+    <!-- Button style -->
+    <style name="button_style" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/_40sdp</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="fontFamily">@font/avenir_heavy</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="backgroundTint">@null</item>
+        <item name="backgroundColor">@null</item>
+        <item name="backgroundTintMode">add</item>
+        <item name="android:background">@drawable/button_background_shape</item>
+    </style>
+
+    <style name="button_style_blue" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/_40sdp</item>
+        <item name="android:textSize">@dimen/_16ssp</item>
+        <item name="fontFamily">@font/avenir_heavy</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="backgroundTint">@null</item>
+        <item name="backgroundColor">@null</item>
+        <item name="backgroundTintMode">add</item>
+        <item name="android:background">@drawable/button_background_shape_blue</item>
+    </style>
+
+
+    <!-- Button style -->
+    <style name="button_style_border_only" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/_40sdp</item>
+        <item name="android:textSize">@dimen/_16ssp</item>
+        <item name="fontFamily">@font/avenir_heavy</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="backgroundTint">@null</item>
+        <item name="backgroundColor">@null</item>
+        <item name="backgroundTintMode">add</item>
+        <item name="android:background">@drawable/button_roundcorner</item>
+    </style>
+
+
+    <!-- Bottom sheet theme-->
+    <style name="CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="CustomBottomSheetTheme" parent="ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+    </style>
+
+    <style name="circleImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="circleImageVie10w" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">5%</item>
+    </style>
+
+    <style name="customRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/customratingstars</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/lightest_grey</item>
+        <item name="colorControlActivated">@color/yellow</item>
+    </style>
+
+    <style name="FullHeightDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowSoftInputMode">stateUnchanged</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+    </style>
+
+    <style name="CardTopCornerRadius" parent="">
+        <item name="cornerSizeTopLeft">@dimen/_7sdp</item>
+        <item name="cornerSizeTopRight">@dimen/_7sdp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
+
+    <!--Loader-->
+    <style name="progressBarDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="colorAccent">@color/app_color</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>>
+    </style>
+
+    <style name="RoundedImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/_50sdp</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.App.CornerSizeTopCorner" parent="">
+        <item name="cornerSizeTopLeft">@dimen/_15sdp</item>
+        <item name="cornerSizeTopRight">@dimen/_15sdp</item>
+    </style>
+
+
+    <style name="BottomSheetDialogThemeNoFloating" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
+
+</resources>
